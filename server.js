@@ -12,8 +12,8 @@ app.use(express.urlencoded({extended: false}));
 
 app.use('/api/att', attController);
 
-//Start the server in port 2020
-// const server = app.listen(process.env.PORT || 2020, function () {
-//     const port = server.address().port
-//     console.log("App started at port:", port)
-// })
+//Start the server on port 2020
+const server = app.listen(process.env.PORT || 2020, function () {
+    const port = server.address().port
+    console.log("App started at port:", port)
+})
